@@ -165,6 +165,65 @@ function transfer(address to, uint256 amount) public returns (bool)
 
 ### 💻 Mit Contract interagieren
 
+#### 🖥️ CLI Methoden (Command Line)
+
+**Option 1: Cast (Foundry) - Empfohlen für CLI**
+
+```bash
+# Cast installieren (falls noch nicht vorhanden)
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+
+# Balance abfragen (keine Private Key nötig)
+cast call 0xEeF20A9F254422495cd16D002167F603d107b6A3 \
+  "balanceOf(address)(uint256)" \
+  0xDeineAdresse \
+  --rpc-url https://polygon-rpc.com/
+
+# Transfer (benötigt Private Key - SICHERHEIT: Nie Private Key in Terminal-History!)
+export PRIVATE_KEY="0x..." # Nur für diese Session
+cast send 0xEeF20A9F254422495cd16D002167F603d107b6A3 \
+  "transfer(address,uint256)" \
+  0xEmpfaengerAdresse \
+  1000000000000000000 \
+  --rpc-url https://polygon-rpc.com/ \
+  --private-key $PRIVATE_KEY
+
+# Mint (nur Owner - benötigt Owner Private Key)
+cast send 0xEeF20A9F254422495cd16D002167F603d107b6A3 \
+  "mint(address,uint256)" \
+  0xEmpfaengerAdresse \
+  1000000000000000000 \
+  --rpc-url https://polygon-rpc.com/ \
+  --private-key $OWNER_PRIVATE_KEY
+
+# Burn (benötigt Private Key)
+cast send 0xEeF20A9F254422495cd16D002167F603d107b6A3 \
+  "burn(uint256)" \
+  1000000000000000000 \
+  --rpc-url https://polygon-rpc.com/ \
+  --private-key $PRIVATE_KEY
+
+# Total Supply abfragen (keine Private Key nötig)
+cast call 0xEeF20A9F254422495cd16D002167F603d107b6A3 \
+  "totalSupply()(uint256)" \
+  --rpc-url https://polygon-rpc.com/
+```
+
+⚠️ **WICHTIG:** Private Keys niemals in Git committen oder öffentlich teilen! Verwende Umgebungsvariablen oder Wallet-Dateien.
+
+**Option 2: PolygonScan direkt (einfachste Methode)**
+
+1. Gehe zu: https://polygonscan.com/address/0xEeF20A9F254422495cd16D002167F603d107b6A3#writeContract
+2. Verbinde dein Wallet (MetaMask)
+3. Wähle die Funktion aus (transfer, mint, burn)
+4. Fülle die Parameter aus und klicke "Write"
+
+**Option 3: MetaMask (Browser Extension)**
+
+- Transfer: MetaMask → Token → Send
+- Für mint/burn: PolygonScan verwenden (siehe Option 2)
+
 #### Web3.js Beispiel:
 ```javascript
 const tokenAddress = "0xEeF20A9F254422495cd16D002167F603d107b6A3";
@@ -224,7 +283,7 @@ await contractWithSigner.transfer(recipient, amount);
 
 </div>
 
-- ✅ **OpenZeppelin Libraries** - Nutzt audited und bewährte Smart Contract Libraries
+- ✅ **OpenZeppelin Libraries** - Nutzt OpenZeppelin's audited und bewährte Smart Contract Libraries (die Libraries sind auditiert, nicht dieser spezifische Contract)
 - ✅ **Ownership Protection** - Privilegierte Funktionen sind durch `Ownable` geschützt
 - ✅ **Max Supply Protection** - Verhindert unbegrenztes Minting durch hard limit
 - ✅ **Verifiziert** - Contract ist verifiziert und Open Source auf PolygonScan
