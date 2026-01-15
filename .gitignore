@@ -1,0 +1,10 @@
+# Wichtig: Diese Datei verhindert, dass sensible Daten hochgeladen werden
+node_modules/
+.env
+*.log
+.DS_Store
+deployments/
+cache/
+artifacts/
+.secret
+private-keys.txt
