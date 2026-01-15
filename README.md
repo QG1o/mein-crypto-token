@@ -1,14 +1,14 @@
-# MeinToken (MEIN) 🚀
+# MeinToken (QGIO) 🚀
 
 Ein ERC-20 Token auf der Polygon Blockchain mit Mint und Burn Funktionen.
 
 ## 📊 Token Informationen
 
 - **Name:** MeinToken
-- **Symbol:** MEIN
+- **Symbol:** QGIO
 - **Decimals:** 18
-- **Total Supply:** 1,000,000 MEIN
-- **Max Supply:** 10,000,000 MEIN
+- **Total Supply:** 1,000,000 QGIO
+- **Max Supply:** 10,000,000 QGIO
 - **Blockchain:** Polygon (MATIC)
 
 ## 🔗 Links
@@ -37,7 +37,7 @@ Der Contract nutzt OpenZeppelin's bewährte und sichere Implementierungen:
 
 **mint(address to, uint256 amount)** - Nur Owner
 - Erstellt neue Tokens
-- Maximum: 10,000,000 MEIN gesamt
+- Maximum: 10,000,000 QGIO gesamt
 
 **burn(uint256 amount)** - Jeder User
 - Verbrennt eigene Tokens permanent
