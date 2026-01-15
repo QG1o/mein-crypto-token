@@ -4,10 +4,10 @@
 
 **Ein moderner ERC-20 Token auf der Polygon Blockchain**
 
-[![Polygon](https://img.shields.io/badge/Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white)](https://polygon.technology/)
-[![ERC-20](https://img.shields.io/badge/ERC--20-Standard-627EEA?style=for-the-badge&logo=ethereum&logoColor=white)](https://eips.ethereum.org/EIPS/eip-20)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-Audited-4E5EE4?style=for-the-badge&logo=openzeppelin&logoColor=white)](https://openzeppelin.com/)
+[![Polygon](https://img.shields.io/badge/Polygon-8247E5?style=plastic&logo=polygon&logoColor=white)](https://polygon.technology/)
+[![ERC-20](https://img.shields.io/badge/ERC--20-Standard-672FAE?style=plastic&logo=ethereum&logoColor=white)](https://eips.ethereum.org/EIPS/eip-20)
+[![License](https://img.shields.io/badge/License-MIT-672FAE?style=plastic)](LICENSE)
+[![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-Audited-4E5EE4?style=plastic&logo=openzeppelin&logoColor=white)](https://openzeppelin.com/)
 
 [Contract Address](#-links) • [PolygonScan](#-links) • [Features](#-features) • [Tokenomics](#-tokenomics)
 
@@ -41,8 +41,8 @@
 0xEeF20A9F254422495cd16D002167F603d107b6A3
 ```
 
-[![PolygonScan](https://img.shields.io/badge/View%20on-PolygonScan-8247E5?style=for-the-badge&logo=polygonscan&logoColor=white)](https://polygonscan.com/address/0xEeF20A9F254422495cd16D002167F603d107b6A3)
-[![Add to MetaMask](https://img.shields.io/badge/Add%20to-MetaMask-FF7139?style=for-the-badge&logo=metamask&logoColor=white)](#-token-zu-metamask-hinzufügen)
+[![PolygonScan](https://img.shields.io/badge/View%20on-PolygonScan-8247E5?style=plastic&logo=polygonscan&logoColor=white)](https://polygonscan.com/address/0xEeF20A9F254422495cd16D002167F603d107b6A3)
+[![Add to MetaMask](https://img.shields.io/badge/Add%20to-MetaMask-FF7139?style=plastic&logo=metamask&logoColor=white)](#-token-zu-metamask-hinzufügen)
 
 </div>
 
@@ -241,7 +241,7 @@ await contractWithSigner.transfer(recipient, amount);
 
 <div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-672FAE?style=plastic)](LICENSE)
 
 MIT License - siehe [LICENSE](LICENSE) Datei für Details
 
@@ -276,7 +276,7 @@ Dieses Projekt ist **Open Source**. Feedback und Verbesserungsvorschläge sind w
 
 **Erstellt mit ❤️ auf Polygon**
 
-[![Polygon](https://img.shields.io/badge/Polygon-8247E5?style=flat-square&logo=polygon&logoColor=white)](https://polygon.technology/)
-[![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-Audited-4E5EE4?style=flat-square&logo=openzeppelin&logoColor=white)](https://openzeppelin.com/)
+[![Polygon](https://img.shields.io/badge/Polygon-8247E5?style=plastic&logo=polygon&logoColor=white)](https://polygon.technology/)
+[![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-Audited-4E5EE4?style=plastic&logo=openzeppelin&logoColor=white)](https://openzeppelin.com/)
 
 </div>
