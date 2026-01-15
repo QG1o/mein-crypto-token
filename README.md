@@ -212,6 +212,23 @@ cast call 0xEeF20A9F254422495cd16D002167F603d107b6A3 \
 
 ⚠️ **WICHTIG:** Private Keys niemals in Git committen oder öffentlich teilen! Verwende Umgebungsvariablen oder Wallet-Dateien.
 
+**🔐 Private Key finden (MetaMask):**
+1. MetaMask öffnen → Account-Menü (oben rechts) → **Account-Details**
+2. **Private Key exportieren** → Passwort eingeben
+3. **WICHTIG:** Private Key beginnt mit `0x` und ist 64 Zeichen lang
+4. **SICHERHEIT:** 
+   - ✅ Nur lokal speichern (z.B. verschlüsselte Datei)
+   - ✅ Niemals per E-Mail, Chat oder Cloud teilen
+   - ✅ Niemals in Git committen
+   - ✅ Niemals Screenshots machen oder teilen
+   - ✅ Wer deinen Private Key hat, hat vollständige Kontrolle über dein Wallet!
+
+**💡 Alternative: Keystore-Datei verwenden (sicherer)**
+```bash
+# Statt Private Key direkt zu verwenden, nutze Keystore-Datei
+cast send ... --keystore ~/.ethereum/keystore/UTC--... --password $PASSWORD
+```
+
 **Option 2: PolygonScan direkt (einfachste Methode)**
 
 1. Gehe zu: https://polygonscan.com/address/0xEeF20A9F254422495cd16D002167F603d107b6A3#writeContract
